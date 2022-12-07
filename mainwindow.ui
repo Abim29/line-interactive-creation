@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="my_canvas" name="canvas">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>551</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string>ClickableArea</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupButton">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>20</y>
+      <width>191</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Button</string>
+    </property>
+    <widget class="QPushButton" name="singleButton">
+     <property name="geometry">
+      <rect>
+       <x>29</x>
+       <y>40</y>
+       <width>141</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Single Line</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="multiButton">
+     <property name="geometry">
+      <rect>
+       <x>29</x>
+       <y>100</y>
+       <width>141</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Multi Line</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="resetButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>160</y>
+       <width>141</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>my_canvas</class>
+   <extends>QLabel</extends>
+   <header location="global">my_canvas.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
